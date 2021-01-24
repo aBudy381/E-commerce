@@ -1,6 +1,6 @@
 <?php   
  session_start();
- require_once('C:/wamp644/www/php project/cart/cart_header.php');  
+ 
  $connect = mysqli_connect("localhost", "root", "", "projet_php");  
  if(isset($_POST["add_to_cart"]))  
  {  

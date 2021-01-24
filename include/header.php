@@ -46,13 +46,17 @@ session_start();
                   <!-- Link--><a class="nav-link active" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <!-- Link--><a class="nav-link" href="http://localhost/php%20project/collection.php">Shop</a>
+                  <!-- Link--><a class="nav-link" href="http://localhost/php%20project/shopcart.php">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <!-- Link--><a class="nav-link" href="http://localhost/php%20project/admin/index.php">Admin panel</a>
                 </li>
                 
               </ul>
               <ul class="navbar-nav ml-auto">               
                 <li class="nav-item"><a class="nav-link" href="http://localhost/php%20project/cart/panier.php"> <i class="fas fa-dolly-flatbed mr-1 text-gray"></i>Cart<small class="text-gray">(2)</small></a></li>
-                <li class="nav-item"><a class="nav-link" href="#"> <i class="fas fa-user-alt mr-1 text-gray"></i>Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://localhost/php%20project/user-registration/index.php"> <i class="fas fa-user-alt mr-1 text-gray"></i>Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://localhost/php%20project/user-registration/user-registration.php"> <i class="fas fa-user-alt mr-1 text-gray"></i>Register</a></li>
               </ul>
             </div>
           </nav>

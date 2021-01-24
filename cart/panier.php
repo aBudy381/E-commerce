@@ -1,6 +1,6 @@
 <?php   
  session_start();
- require_once('C:/wamp644/www/php project/cart/cart_header.php');  
+ require_once('./cart_header.php');  
  $connect = mysqli_connect("localhost", "root", "", "projet_php");  
  if(isset($_POST["add_to_cart"]))  
  {  
@@ -56,6 +56,7 @@
 <body>
  <!--*************************************************************************-->
 <section class="py-5">
+<script src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
           <h2 class="h5 text-uppercase mb-4">Shopping cart</h2>
           <div class="row">
             <div class="col-lg-8 mb-4 mb-lg-0">
@@ -81,7 +82,7 @@
                           ?>
                     <tr>
                       <th class="pl-0 border-0" scope="row">
-                          <!--<?php echo $values["item_name"]; ?> is not working in the img src-->
+                         <!--<?php /*echo $values["item_img"];*/ ?>*****ALA CORRECT THIS PLEASE IT WONT SHOW THE PRODUCT IMAGE IN THE CART CHECK THE ITEM ARRAY AND THE IMG NAMA IN THE HTML CODE******** -->
                         <div class="media align-items-center"><a class="reset-anchor d-block animsition-link" href="detail.html"><img src="" alt="..." width="70"/></a>
                           <div class="media-body ml-3"><strong class="h6"><a class="reset-anchor animsition-link" href="detail.html"><?php echo $values["item_name"]; ?></a></strong></div>
                         </div>
@@ -102,7 +103,7 @@
                         <p class="mb-0 small">$<?php echo $values["item_price"]; ?></p>
                       </td>
                       <!--ACTION DELETE FROM CART-->
-                      <td class="align-middle border-0"><a class="reset-anchor" href="?action=delete&id=<?php echo $values["item_id"]; ?>"><i class="fas fa-trash-alt small text-muted"></i></a></td>
+                      <td class="align-middle border-0"><a class="reset-anchor" href="?action=delete&id=<?php echo $values["item_id"]; ?>"><i class="fas fa-trash-alt"></i></a></td>
                     </tr>
                     <?php  
                                     $total = $total + ($values["item_quantity"] * $values["item_price"]);  
@@ -124,7 +125,7 @@
               <div class="bg-light px-4 py-3">
                 <div class="row align-items-center text-center">
                   <div class="col-md-6 mb-3 mb-md-0 text-md-left"><a class="btn btn-link p-0 text-dark btn-sm" href="http://localhost/php%20project/shopcart.php"><i class="fas fa-long-arrow-alt-left mr-2"> </i>Continue shopping</a></div>
-                  <div class="col-md-6 text-md-right"><a class="btn btn-outline-dark btn-sm" href="checkout.html">Procceed to checkout<i class="fas fa-long-arrow-alt-right ml-2"></i></a></div>
+                  <div class="col-md-6 text-md-right"><a class="btn btn-outline-dark btn-sm" href="checkout.php">Procceed to checkout<i class="fas fa-long-arrow-alt-right ml-2"></i></a></div>
                 </div>
               </div>
             </div>
@@ -151,7 +152,7 @@
             </div>
           </div>
         </section>
-  <?php require_once('C:/wamp644/www/php project/include/footer.php');?>      
+      
              
 
 

@@ -52,7 +52,6 @@ if(isset($_SESSION['username'])){
                 /* ************** INSERT INTO DATABASE *********************** */
                 /*----------------------------------------------------------------------------*/
 
-            /* ** edit by abdou   from line 56 to 67 add error*/
                 echo "data recived";
 
 
@@ -87,6 +86,8 @@ if(isset($_SESSION['username'])){
     }else if($_GET['action']=='modify_delete'){
         ?>
 
+    
+</header>
  <div class="container">                                        
   <table border=1>
   <thead>

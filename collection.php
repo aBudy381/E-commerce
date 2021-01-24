@@ -210,7 +210,7 @@
 <div class="product-grid4">
                 <div class="product-image4">
                     <a href="#">
-                        <img class="pic-1"  src="<?php echo $row["image"]; ?>">
+                        <img class="pic-1" name="product_img" src="<?php echo $row["image"]; ?>">
                         
                     </a>
                     <ul class="social">
@@ -228,7 +228,7 @@
                     </div>
                     <input type="hidden" name="hidden_name" value="<?php echo $row["title"]; ?>" />  
                       <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />  
-                    <a class="add-to-cart" href="" name="add_to_cart">ADD TO CART</a>
+                    <a class="add-to-cart" href="http://localhost/php%20project/cart/panier.php" name="add_to_cart">ADD TO CART</a>
                 </div>
 </div>
 
